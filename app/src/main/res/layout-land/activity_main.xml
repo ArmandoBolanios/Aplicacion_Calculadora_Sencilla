@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/txtmsj"
+        android:id="@+id/Mensaje"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtN1"
+        android:id="@+id/txvN1"
+        android:layout_alignBottom="@+id/edN1"
+        android:layout_alignLeft="@+id/txvN2"
+        android:layout_alignStart="@+id/txvN2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtN2"
+        android:id="@+id/txvN2"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/txvN1"
+        android:layout_alignRight="@+id/btnSum"
+        android:layout_alignEnd="@+id/btnSum" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edN1"
+        android:layout_below="@+id/Mensaje"
+        android:layout_toRightOf="@+id/btnSum"
+        android:layout_toEndOf="@+id/btnSum" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edN2"
+        android:layout_alignBottom="@+id/txvN2"
+        android:layout_alignLeft="@+id/edN1"
+        android:layout_alignStart="@+id/edN1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtResultado"
+        android:id="@+id/txtvResl"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btnSum"
+        android:layout_alignRight="@+id/btnSum"
+        android:layout_alignEnd="@+id/btnSum" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edResul"
+        android:layout_alignBottom="@+id/txtvResl"
+        android:layout_alignLeft="@+id/edN2"
+        android:layout_alignStart="@+id/edN2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSumar"
+        android:id="@+id/btnSum"
+        android:layout_below="@+id/edN2"
+        android:layout_alignRight="@+id/Mensaje"
+        android:layout_alignEnd="@+id/Mensaje"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMultip"
+        android:id="@+id/btnMultip"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_alignTop="@+id/btnRest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDivid"
+        android:id="@+id/btnDivid"
+        android:layout_above="@+id/txtvResl"
+        android:layout_toLeftOf="@+id/btnMultip"
+        android:layout_toStartOf="@+id/btnMultip"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtRestar"
+        android:id="@+id/btnRest"
+        android:layout_alignTop="@+id/btnDivid"
+        android:layout_alignLeft="@+id/edN2"
+        android:layout_alignStart="@+id/edN2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+</RelativeLayout>

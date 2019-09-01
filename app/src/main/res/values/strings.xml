@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="txtmsj">Calculadora de Armando</string>
+    <string name="txtN1">Número 1</string>
+    <string name="txtN2">Número 2</string>
+    <string name="txtResultado">Resultado</string>
+    <string name="txtSumar">SUMAR</string>
+    <string name="txtRestar">RESTAR</string>
+    <string name="txtMultip">MULTIPLICAR</string>
+    <string name="txtDivid">DIVIDIR</string>
+
+</resources>

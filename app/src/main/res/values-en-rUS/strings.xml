@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="txtmsj">Calculator of Armando</string>
+    <string name="txtN1">Number 1</string>
+    <string name="txtN2">Number 2</string>
+    <string name="txtResultado">Result</string>
+    <string name="txtSumar">SUM</string>
+    <string name="txtRestar">REST</string>
+    <string name="txtMultip">MULTIPLY</string>
+    <string name="txtDivid">DIVIDE</string>
+</resources>

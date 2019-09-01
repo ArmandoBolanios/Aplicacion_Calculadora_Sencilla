@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.boda.hermann.calculadora.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/txtmsj"
+        android:id="@+id/Mensaje" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtN1"
+        android:id="@+id/txvN1"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/Mensaje"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtN2"
+        android:id="@+id/txvN2"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/edN1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edN1"
+        android:layout_below="@+id/Mensaje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edN2"
+        android:layout_alignBaseline="@+id/txvN2"
+        android:layout_alignBottom="@+id/txvN2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtResultado"
+        android:id="@+id/txtvResl"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/btnDivid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edResul"
+        android:layout_alignBaseline="@+id/txtvResl"
+        android:layout_alignBottom="@+id/txtvResl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSumar"
+        android:id="@+id/btnSum"
+        android:layout_alignBaseline="@+id/btnMultip"
+        android:layout_alignBottom="@+id/btnMultip"
+        android:layout_toLeftOf="@+id/edN2"
+        android:layout_toStartOf="@+id/edN2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMultip"
+        android:id="@+id/btnMultip"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edN2"
+        android:layout_alignRight="@+id/edN2"
+        android:layout_alignEnd="@+id/edN2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDivid"
+        android:id="@+id/btnDivid"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnMultip"
+        android:layout_alignStart="@+id/btnMultip" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtRestar"
+        android:id="@+id/btnRest"
+        android:layout_alignBottom="@+id/btnDivid"
+        android:layout_alignRight="@+id/btnSum"
+        android:layout_alignEnd="@+id/btnSum" />
+
+
+</RelativeLayout>
